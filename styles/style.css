@@ -1,0 +1,383 @@
+html  {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after    {
+    box-sizing: inherit;
+}
+
+body    {
+    width: 100%; 
+    margin: 0;
+    font-family: PT sans;
+}
+
+.flex   {
+    display: flex;
+}
+
+h2  {
+    font-style: normal;
+    font-size: calc(0.8rem + 1.4vw);
+    font-weight: 400;
+    margin: 0;
+}
+
+a   {
+    text-decoration: none;
+}
+
+
+
+ .viewbox    { /* это блок на всю область экрана с визиткой и меню */
+    height: 100vh;  /* вот его высота во вьюпорт */
+    width: 100%; /* ширина в сто процентов, почему процентов а не вп - хз, но так какжется надежнее */
+    position: relative;
+}
+
+
+.headbox  {
+  width: 100%;
+}
+
+/* navigation menu styles  */
+
+.nav  {
+  width: 100%;
+  display: flex;
+}
+
+.menu  {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+    list-style-type: none;
+}
+
+.top-menu  {
+  top: 0px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: stretch;
+  align-items: center;
+  height: 5rem;
+  background-color: #E8E8E8;
+}
+
+.bottom-menu  {
+  bottom: 0px;
+  background-color: #F4F4F4;
+  flex-wrap: wrap-reverse;
+  align-content: stretch;
+  justify-content: flex-end;
+  height: 5rem;
+  border-top: 0.4rem solid #F4F4F4;
+  position: absolute;
+}
+
+
+.index-menu  {
+  position: absolute;
+  bottom: 0px;
+  background-color: #E8E8E8;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  list-style-type: none;
+  align-content: stretch;
+  border-top: 0.4rem solid #E8E8E8;
+}
+
+.second-menu  {
+  position: relative;
+  background-color: #F4F4F4;
+  flex-wrap: wrap-reverse;
+  list-style-type: none;
+  justify-content: flex-end;
+  padding-right: calc(2rem + 1.4vw);
+  /* border-top: 0.4rem solid #F4F4F4; */
+}
+
+
+.menu__item-li  {
+    align-items: stretch ;
+    display: block;
+    position: relative;
+}
+
+.menu__item-li, 
+.menu__item {
+    min-width: calc(10rem + 1.4vw);
+    height: 100%;
+}
+
+.first-menu__item-li  {
+  background-color: #E8E8E8;
+}
+
+.second-menu__item-li  {
+  background-color: #F4F4F4;
+}
+
+.menu__item-li.top-menu_selected  {
+    background-color: white;
+    border-top: 0.3rem solid black;
+}
+
+.menu__item-li.top-menu_selected-pre  {
+  /* flex: 6; */
+  background-color: #F4F4F4;
+  /* margin-right: auto; */
+  border-top: 0.3rem solid black;
+}
+
+
+.menu__item.bottom-menu__selected {
+  background: #F4F4F4;
+}
+
+.menu__item-li.second-menu_selected {
+  background-color: white;
+  border-top: 0.3rem solid #F4F4F4;
+}
+
+
+.card__menu__item   {
+  background-color: #F4F4F4;
+  margin-right: auto;
+  left: 0;
+}
+
+
+.menu_item  {
+    text-transform: uppercase;
+    font-family: PT Sans Narrow;
+    color: black;
+    font-size: calc(0.8rem + 0.4vw);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.menu_item  {
+    padding: 1rem 2rem 1rem 1rem;
+    padding-left: calc(0.4rem + 0.4vw);
+}
+
+
+
+
+
+.top-ava  {
+  max-height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.top-ava-link  {
+  margin-right: auto;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: stretch ;
+  height: 100%;
+}
+
+.top-ava-link a  {
+    width: 100%;
+}
+
+.top-ava-pic {
+    display: block;
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    
+}
+
+
+
+.card   {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    align-content:center;
+    margin: auto;
+}
+
+ .card-pic   { /* блок с картинкой */
+    position: relative;
+    flex: 5;
+    text-align: right;
+    max-height: 100%;
+    min-width: 33vh;
+}
+
+.card-ava  {
+    position: relative;   
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.card-text   { /* блок с текстом */
+    flex: 6;
+    padding-right: calc(0.8rem + 1.0vw);
+}
+
+.card-pre  { /* верхний текст */
+    font-size: calc(0.3rem + 1.0vw);
+    font-family: PT Mono;
+    padding-right:  calc(0.1rem + 1.4vw);
+}
+
+.card-title    { /* основной заголовок */
+    font-family: PT Serif;
+    font-style: normal;
+    font-size: calc(1.8rem + 1.8vw);
+    font-weight: 400;
+    min-width: 40%;
+    border-top: calc(0.01rem + 0.3vw) solid #000;
+    display: inline-block;
+    margin-left: calc(0.2rem + 0.5vw);
+    margin-bottom: 0;
+    margin-top: calc(0.1rem + 1.4vw);
+    padding-left: calc(0.1rem + 1.1vw);
+}
+
+
+
+.card-p   { /* основной текст карты */
+    font-size:  calc(0.4rem + 1.0vw);
+    font-family: PT Serif;
+    padding-left: calc(0.9rem + 1.8vw);
+}
+
+
+/* Страница about */
+
+.about-card   {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    align-content:center;
+    margin: auto;
+}
+
+.about-card-text   { /* блок с текстом */
+    flex: 5;
+    padding: 0rem 0.6rem 0rem 2rem;
+}
+
+.about-card-title {
+  font-family: PT Serif;
+  font-style: normal;
+  font-size: calc(1.2rem + 1.8vw);
+  font-weight: 400;
+  min-width: 40%;
+  display: inline-block;
+  margin: 0;
+  padding-bottom: calc(0.2rem + 1.8vw);
+}
+
+.about-card-p {
+  font-size:  calc(0.4rem + 1.0vw);
+  font-family: PT Serif;
+  padding: 0;
+}
+
+.about-card-pic   { /* блок с картинкой */
+    position: relative;
+    flex: 5;
+    text-align: left;
+    max-height: 100%;
+    min-width: 33vh;
+}
+
+.about-card-ava  {
+    position: relative;   
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+/* public */
+
+.public {
+    width: 100%;
+    margin: 0;
+    background-color: #C4C4C4;
+}
+
+.public-conteiner  {
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
+    background-color: #FFFFFF;
+}
+
+.post  {
+    margin: 0;
+    border-bottom: 1px;
+    padding:   calc(0.09rem + 1.5vw);
+    position: relative;
+}
+
+.post-header  {
+    display: flex;
+}
+
+.post-data  {
+    display: block;
+    position: absolute;
+    margin-top: 0;
+    margin-right: 0;
+    padding-right: calc(0.09rem + 1.5vw);
+    padding-top: 0;
+    right: 0;
+}
+
+.post-title  {
+    padding: 0;
+}
+
+
+
+
+/* Страница со свободным форматом */
+
+.page {
+  width: 100%;
+}
+
+.page-title {
+  padding: calc(0.08rem + 1.5vw);
+  /* padding-top: 0; */
+  padding-bottom: calc(0.02rem + 1vw);
+  margin: 0;
+}
+
+.page-p {
+  font-size:  calc(0.4rem + 1.0vw);
+  font-family: PT Serif;
+  padding-left: calc(0.9rem + 1.8vw);
+  padding-right: calc(0.9rem + 1.8vw);
+  margin: 0;
+}

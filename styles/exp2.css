@@ -1,0 +1,43 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+  font-family: sans-serif;
+}
+
+.viewbox {
+    display: flex;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  background-color: aliceblue;
+}
+
+img.cart-ava {
+    width: 100%;
+    height: auto;
+}
+
+
+.menu.index-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #E8E8E8;
+}
+
+.menu_item.cart__menu__item a {
+    background-color: #F4F4F4;
+}
+.menu__item a {
+    line-height: 5rem;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0 10px;
+}

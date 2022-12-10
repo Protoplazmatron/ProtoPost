@@ -1,0 +1,192 @@
+
+html  {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after  {
+    box-sizing: inherit;
+}
+
+body    {
+    width: 100%; 
+    margin: 0;
+    font-family: PT sans;
+}
+
+
+
+
+h2  {
+    margin-top: 0;
+    font-family: PT Sans;
+    font-style: normal;
+    font-size: calc(0.8rem + 1.4vw);
+    font-weight: 400;
+    padding-top: calc(0.4rem + 2vw);
+    padding-left: calc(2.4rem + 2vw);
+}
+
+
+
+body    {
+    width: 100%; 
+    margin: 0;
+    font-family: PT sans;
+}
+
+ .viewbox    { /* это блок на всю оласть экрана с визиткой и меню */
+    height: 100vh;  /* вот его высота во вьюпорт */
+    width: 100%; /* ширина в сто процентов, почему процентов а не вп - хз, но так какжется надежнее */
+    position: relative;
+}
+
+.cart   {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    align-content:center;
+    margin: 0% 3% 0 3%;
+}
+
+ .cart-pic   { /* блок с картинкой */
+    position: relative;
+    flex: 5;
+    /* margin: auto; */
+    text-align: right;
+    max-height: 100%;
+    min-width: 25vh;
+}
+
+.cart-ava  {
+    position: relative;   
+    max-width: 90%;
+    max-height: 90%;
+    /* padding: 1rem; */
+}
+
+.cart-text   { /* блок с текстом */
+    flex: 6;
+    padding: 1rem;
+    /* margin: auto; */
+}
+
+.cart__pre  { /* верхний текст */
+    font-size: calc(0.3rem + 1.0vw);
+    font-family: PT Mono;
+    padding-right:  calc(0.1rem + 1.4vw);
+}
+
+.cart__title    { /* основной заголовок */
+    font-family: PT Serif;
+    font-style: normal;
+    font-size: calc(1.8rem + 1.8vw);
+    font-weight: 400;
+    min-width: 40%;
+    border-top: calc(0.01rem + 0.3vw) solid #000;
+    display: inline-block;
+    margin-left: calc(0.2rem + 0.5vw);
+    margin-bottom: 0;
+    margin-top: calc(0.1rem + 1.4vw);
+    padding-left: calc(0.4rem + 1.1vw);
+}
+
+
+.cart__sub   { /* основной текст карты */
+    font-size:  calc(0.4rem + 1.0vw);
+    font-family: PT Serif;
+    padding-left: calc(0.9rem + 1.8vw);
+}
+
+
+
+
+
+
+/* menu */
+
+
+.menu  {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #E8E8E8;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-content: stretch;
+}
+
+.menu_item  {
+    /* display: block; */
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: PT Sans Narrow;
+    color: black;
+    font-size: calc(0.8rem + 0.4vw);
+}
+
+.menu__item {
+    min-width: 200px;
+    padding: calc(0.5rem + 1.3vw) calc(0.1rem + 1.4vw) calc(0.5rem + 1.3vw) calc(0.05rem + 0.5vw);
+    display: block;
+    border-top: 0.3rem solid #E8E8E8;
+    /* margin-right: 0; */
+    /* flex: 4; */
+}
+
+.cart__menu__item   {
+    /* flex: 6; */
+    background-color: #F4F4F4;
+    /* margin-right: auto; */
+    border-top: 0.3rem solid #E8E8E8;
+    padding-right: calc(4.6rem + 2.4vw);
+}
+
+
+
+/* public */
+
+.public {
+    width: 100%;
+    margin: 0;
+    background-color: #C4C4C4;
+}
+
+.public-conteiner  {
+    max-width: 1440px;
+    margin: 0 auto 0 auto;
+    background-color: #FFFFFF;
+}
+
+.post  {
+    margin: 0;
+    border-bottom: 1px;
+    padding:   calc(0.09rem + 1.5vw);
+    position: relative;
+}
+
+.post-header  {
+    display: flex;
+}
+
+.post-data  {
+    display: block;
+    position: absolute;
+    margin-top: 0;
+    margin-right: 0;
+    padding-right: calc(0.09rem + 1.5vw);
+    padding-top: 0;
+    right: 0;
+}
+
+.post-title  {
+    padding: 0;
+}
